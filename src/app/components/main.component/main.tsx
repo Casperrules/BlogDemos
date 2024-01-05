@@ -1,3 +1,4 @@
+"use client";
 import { Donut } from "../charts/donut";
 import { Line } from "../charts/line";
 import Area from "../charts/mixed";

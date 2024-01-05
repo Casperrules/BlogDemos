@@ -1,3 +1,4 @@
+"use client";
 import Header from "./components/header.component/header";
 import Dashboard from "./components/main.component/main";
 import Sidebar from "./components/sidebar.component/sidebar";
