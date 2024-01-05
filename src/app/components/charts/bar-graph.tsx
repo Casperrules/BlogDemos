@@ -1,7 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
+const Charts = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 export default function Mixed() {
   const option = {
@@ -34,7 +35,7 @@ export default function Mixed() {
   return (
     <div className="p-2 flex flex-col h-fit border-[#dfdfdf] border rounded-md">
       <div className="text-[#777] font-semibold m-2">Some Title for Chart</div>
-      <ApexChart
+      <Charts
         type="line"
         options={option}
         series={series}

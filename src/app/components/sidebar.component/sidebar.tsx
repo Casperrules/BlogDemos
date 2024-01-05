@@ -1,5 +1,4 @@
 import SidebarItem from "../sidebar-item.component/sidebar-item";
-import * as styles from "./sidebar.module.css";
 
 export default function Sidebar() {
   return (

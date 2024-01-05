@@ -1,8 +1,7 @@
 "use client";
-
 import dynamic from "next/dynamic";
-const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
+const Charts = dynamic(() => import("react-apexcharts"), { ssr: false });
 export default function Area() {
   const option = {
     chart: {
@@ -30,7 +29,7 @@ export default function Area() {
   return (
     <div className="p-2 flex flex-col h-fit border-[#dfdfdf] border rounded-md">
       <div className="text-[#777] font-semibold m-2">Area Graph</div>
-      <ApexChart
+      <Charts
         type="area"
         options={option}
         series={series}
